@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Android Studio mendukung berbagai atribut XML dalam namespace
+tools yang mengaktifkan fitur waktu desain (seperti tata letak yang
+harus ditampilkan dalam fragmen) atau perilaku waktu kompilasi
+(seperti mode penyingkatan yang harus digunakan pada resource XML Anda).
+Saat Anda membuat aplikasi,
+alat build menghapus atribut ini sehingga tidak berdampak pada ukuran APK atau perilaku
+runtime Anda.Atribut tools membantu menyembunyikan pesan peringatan lint. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+<!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+pada kode layout_width digunakan untuk mengatur lebar sebesar 187dp
+pada kode layout_height digunakan untuk mengatur panjang atau tinggi 166dp
+pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 40dp
+pada kode contentDescription="@string/imgLogoawal" digunakan untuk mendeskripsikan suatu gambar.
+dan untuk kode yang lainnya untuk mengatur letak layout.-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/imgLogoawal"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/utklogo2" />
+
+    <!-- EditText adalah elemen yang berfungsi untuk mengambil inputan dari user.
+     pada bagian ini kita menggunakan id untuk memberikan penamaan pada editText
+     karena dalam file ini bagian editText tidak hanya satu saja melainkan ada beberapa sehingga
+     memerlukan atribut id
+     pada kode layout_width digunakan untuk mengatur lebar sebesar 367dp
+     pada kode layout_height digunakan untuk mengatur panjang atau tinggi 73dp
+     pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 24dp
+     pada kode layout_marginend digunakan untuk mengatur jarak tepi bawah yaitu sebanyak 24dp
+     pada kode autofillhints digunakan untuk membuat nama masukan input untuk pengguna sehingga
+     dapat memberikan info kepada user untuk memasukan username
+     dan untuk kode yang lainnya untuk mengatur letak layout
+     -->
+    <EditText
+        android:id="@+id/teksPengguna"
+        android:layout_width="367dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="MASUKKAN NAMA PENGGUNA"
+        android:ems="10"
+        android:hint="@string/textNamapengguna"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- EditText adalah elemen yang berfungsi untuk mengambil inputan dari user.
+     pada bagian ini kita menggunakan id dengan nama texspassword untuk memberikan penamaan pada editText
+     karena dalam file ini bagian editText tidak hanya satu saja melainkan ada beberapa sehingga
+     memerlukan atribut id
+     pada kode layout_width digunakan untuk mengatur lebar sebesar 360dp
+     pada kode layout_height digunakan untuk mengatur panjang atau tinggi 70dp
+     pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 24dp
+     pada kode layout_marginend digunakan untuk mengatur jarak tepi bawah yaitu sebanyak 16dp
+     pada kode autofillhints digunakan untuk membuat nama masukan password untuk pengguna sehingga
+     dapat memberikan info kepada user untuk memasukan password
+     dan untuk kode yang lainnya untuk mengatur letak layout
+     -->
+    <EditText
+        android:id="@+id/teksPassword"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Masukkan Password"
+        android:ems="10"
+        android:hint="@string/textMaskpassword"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksPengguna"
+        tools:ignore="TextContrastCheck" />
+
+<!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+     android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+     XML file atau secara terprogram pada .java file.
+     Atribut android:id adalah identitas unik untuk tombol tersebut.
+     Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut.
+     Yang mana width adalah lebar dan height adalah tingginya.
+     wrap_content mengartikan bahwa ukuran menyesuaikan terhadap komponennya.
+     Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+ -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="177dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksPassword"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+<!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+     pada kode layout_width digunakan untuk mengatur lebar sebesar 326dp
+     pada kode layout_height digunakan untuk mengatur panjang atau tinggi 33dp
+     pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 16dp
+     pada kode android:text digunakan untuk menampilkan tulisan atau text
+     kemudian textAlignment digunakan untuk peletakan letak kalimatnya yaitu berada ditengah.
+     pad text color digunakan untuk memberikan warna pada text yaitu hitam
+     kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+ -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="326dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textUcapan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

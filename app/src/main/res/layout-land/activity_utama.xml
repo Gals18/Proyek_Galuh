@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Android Studio mendukung berbagai atribut XML dalam namespace
+tools yang mengaktifkan fitur waktu desain (seperti tata letak yang
+harus ditampilkan dalam fragmen) atau perilaku waktu kompilasi
+(seperti mode penyingkatan yang harus digunakan pada resource XML Anda).
+Saat Anda membuat aplikasi,
+alat build menghapus atribut ini sehingga tidak berdampak pada ukuran APK atau perilaku
+runtime Anda.Atribut tools membantu menyembunyikan pesan peringatan lint. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    tools:context=".UtamaActivity">
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+      ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+      pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+      berkali kali sehingga perlu inisialisasi dengan id imageview9
+      pada kode layout_width digunakan untuk mengatur lebar
+      pada kode layout_height digunakan untuk mengatur panjang atau tinggi
+      pada kode layout_margintop digunakan untuk mengatur jarak tepi atas
+      pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+      yaitu dari drawable dengan nama file delapan.jpg
+      pada kode contentDescription="@string/imganime" digunakan untuk mendeskripsikan suatu gambar.
+      dan untuk kode yang lainnya untuk mengatur letak layout.-->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="53dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imgGambarview"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/delapan" />
+
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+     android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+     XML file atau secara terprogram pada .java file.
+     pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+     berkali kali sehingga perlu inisialisasi dengan id button6
+     Atribut android:id adalah identitas unik untuk tombol tersebut.
+     Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 77 dan 56
+     atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 16 dan 28 untuk start.
+     Yang mana width adalah lebar dan height adalah tingginya.
+     pada tombol ini menggunakan warna otomatis, warna yan telah dideklarasikan di color values
+     Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+ -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="77dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textB4"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="RtlHardcoded" />
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+    ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+    pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+    berkali kali sehingga perlu inisialisasi dengan id imageview2
+    pada kode layout_width digunakan untuk mengatur lebar sebesar 77dp
+    pada kode layout_height digunakan untuk mengatur panjang atau tinggi 56dp
+    pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 4dp
+    pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+    yaitu dari drawable dengan nama file satu.jpg
+    pada kode contentDescription="@string/imganime" digunakan untuk mendeskripsikan suatu gambar.
+    dan untuk kode yang lainnya untuk mengatur letak layout.-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="79dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgAnime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/satu" />
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+                 ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+                 pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+                 berkali kali sehingga perlu inisialisasi dengan id imageview5
+                 pada kode layout_width digunakan untuk mengatur lebar sebesar 93dp
+                 pada kode layout_height digunakan untuk mengatur panjang atau tinggi 101dp
+                 pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 12dp
+                 pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+                 yaitu dari drawable dengan nama file empat.jpg
+                 pada kode contentDescription="@string/imgGambarempat" digunakan untuk mendeskripsikan suatu gambar.
+                 -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imgGambarempat"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/empat" />
+
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+      android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+      XML file atau secara terprogram pada .java file.
+      pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+      berkali kali sehingga perlu inisialisasi dengan id button3
+      Atribut android:id adalah identitas unik untuk tombol tersebut.
+      Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 96 dan 66
+      atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 36 dan 4 untuk start.
+      Yang mana width adalah lebar dan height adalah tingginya.
+      pada kode_
+      Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+  -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textB3"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="RtlHardcoded" />
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+       android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+       XML file atau secara terprogram pada .java file.
+       pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+       berkali kali sehingga perlu inisialisasi dengan id button
+       Atribut android:id adalah identitas unik untuk tombol tersebut.
+       Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 104 dan 62.
+       Yang mana width adalah lebar dan height adalah tingginya.
+       pada kode_
+       Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+   -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textB1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+ pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+ berkali kali sehingga perlu inisialisasi dengan id textview3
+ pada kode layout_width digunakan untuk mengatur lebar sebesar layar android
+ pada kode background digunakan untuk pemberian warna pada layout yaitu dengan warna teal seperti biru muda
+ pada kode android:text digunakan untuk menampilkan tulisan atau text "Koleksi stiker"
+ pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+ pada kode textAlignment="center" gunanya untuk mengatur tata ltak textview ini
+ pada text color digunakan untuk memberikan warna pada text yaitu white atau putih
+ kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+ -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+berkali kali sehingga perlu inisialisasi dengan id textview9
+pada kode layout_width digunakan untuk mengatur lebar sebesar layar android sehigga menyesuaikan
+pada kode layout_height digunakan untuk mengatur sepanjang layar android sehigga menyesuaikan
+pada kode background digunakan untuk pemberian warna pada layout yaitu dengan warna teal seperti biru muda
+pada kode android:text digunakan untuk menampilkan tulisan atau text harga gambar 5
+pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+-->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG5"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+     android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+     XML file atau secara terprogram pada .java file.
+     pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+     berkali kali sehingga perlu inisialisasi dengan id button2
+     Atribut android:id adalah identitas unik untuk tombol tersebut.
+     Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 105 dan 63
+     atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 40 dan 44 untuk start.
+     Yang mana width adalah lebar dan height adalah tingginya.
+     pada kode_
+     Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+ -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="83dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textB2"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+ pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+ berkali kali sehingga perlu inisialisasi dengan id textview4
+ pada kode layout_width digunakan untuk mengatur lebar sebesar layar android
+ pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+ pada kode textAlignment="center" gunanya untuk mengatur tata letak textview ini
+ pada text color digunakan untuk memberikan warna pada text yaitu white atau putih
+ kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+ -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG2"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+  pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+  berkali kali sehingga perlu inisialisasi dengan id textview10
+  pada kode layout_width digunakan untuk mengatur lebar sebesar 238dp
+  pada kode layout_height digunakan untuk mengatur panjang atau tinggi 32dp
+  pada kode background digunakan untuk pemberian warna pada layout yaitu dengan warna teal seperti biru muda
+  pada kode android:text digunakan untuk menampilkan tulisan atau text "Koleksi stiker"
+  pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+  pada kode textAlignment="center" gunanya untuk mengatur tata ltak textview ini
+  pada text color digunakan untuk memberikan warna pada text yaitu white atau putih
+  kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+  -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="238dp"
+        android:layout_height="32dp"
+        android:background="@color/purple_200"
+        android:text="@string/textKoleksi"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+         ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+         pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+         berkali kali sehingga perlu inisialisasi dengan id imageview11
+         pada kode layout_width digunakan untuk mengatur lebar sebesar 89dp
+         pada kode layout_height digunakan untuk mengatur panjang atau tinggi 100dp
+         pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 16dp
+         pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+         yaitu dari drawable dengan nama file tujuh.jpg
+         pada kode android:contentDescription="@string/gambarPenjualan" digunakan untuk mendeskripsikan suatu gambar.
+         -->
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="70dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:contentDescription="@string/gambarPenjualan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/tujuh"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+  pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+  berkali kali sehingga perlu inisialisasi dengan id textview5
+  pada kode layout_width digunakan untuk mengatur lebar sebesar layar android sehigga menyesuaikan
+  pada kode layout_height digunakan untuk mengatur sepanjang layar android sehigga menyesuaikan
+  pada kode background digunakan untuk pemberian warna pada layout yaitu dengan warna teal seperti biru muda
+  pada kode android:text digunakan untuk menampilkan tulisan atau text harga gambar 5
+  pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+  pada kode textAlignment="center" gunanya untuk mengatur tata letak textview ini
+  pada text color digunakan untuk memberikan warna pada text yaitu white atau putih
+  kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+  -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG3"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+     ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+     pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+     berkali kali sehingga perlu inisialisasi dengan id imageview4
+     pada kode layout_width digunakan untuk mengatur lebar sebesar 74dp
+     pada kode layout_height digunakan untuk mengatur panjang atau tinggi 74dp
+     pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 16dp
+     pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+     yaitu dari drawable dengan nama file tiga.jpg
+     pada kode contentDescription="@string/imgGambartiga" digunakan untuk mendeskripsikan suatu gambar.
+     dan untuk kode yang lainnya untuk mengatur letak layout.-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="73dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgGambartiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/tiga" />
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+         ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+         pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+         berkali kali sehingga perlu inisialisasi dengan id imageview11
+         pada kode layout_width digunakan untuk mengatur lebar sebesar 89dp
+         pada kode layout_height digunakan untuk mengatur panjang atau tinggi 100dp
+         pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 16dp
+         pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+         yaitu dari drawable dengan nama file tujuh.jpg
+         pada kode android:contentDescription="@string/gambarPenjualan" digunakan untuk mendeskripsikan suatu gambar.
+         -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG6"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+
+    <!-- ImageView adalah kelas digunakan untuk menampilkan file gambar di app.
+        ImageView hadir dengan pilihan konfigurasi yang berbeda untuk mendukung jenis skala yang berbeda.
+        pada imageview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+        berkali kali sehingga perlu inisialisasi dengan id imageview3
+        pada kode layout_width digunakan untuk mengatur lebar sebesar 99dp
+        pada kode layout_height digunakan untuk mengatur panjang atau tinggi 80dp
+        pada kode layout_margintop digunakan untuk mengatur jarak tepi atas yaitu sebanyak 12dp
+        pada kode srcCompact digunakan untuk menunjukan tempat penyimpanan logo tersebut berasal
+        yaitu dari drawable dengan nama file dua.jpg
+        pada kode contentDescription="@string/imgGambardua" digunakan untuk mendeskripsikan suatu gambar.
+        dan untuk kode yang lainnya untuk mengatur letak layout.-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="71dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgGambardua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/dua" />
+
+
+    <!-- Textview adalah salah satu widget yang digunakan untuk menampilkan text pada aplikasi android atau layout.
+ pada textview ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut textview dapat digunakan
+ berkali kali sehingga perlu inisialisasi dengan id textview8
+ pada kode layout_width digunakan untuk mengatur lebar sebesar layar android sehigga menyesuaikan
+ pada kode layout_height digunakan untuk mengatur sepanjang layar android sehigga menyesuaikan
+ pada kode background digunakan untuk pemberian warna pada layout yaitu dengan warna teal seperti biru muda
+ pada kode android:text digunakan untuk menampilkan tulisan atau text harga gambar 7
+ pada kode android:textsize gunanya untuk mengatur ukuran huruf.
+ pada kode textAlignment="center" gunanya untuk mengatur tata letak textview ini
+ pada text color digunakan untuk memberikan warna pada text yaitu white atau putih
+ kemudian kode yang laiinya untuk mengatur ukuran layoutnya.
+ -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textG7"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+         android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+         XML file atau secara terprogram pada .java file.
+         pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+         berkali kali sehingga perlu inisialisasi dengan id button4
+         Atribut android:id adalah identitas unik untuk tombol tersebut.
+         Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 407 dan 80
+         atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 36.
+         Yang mana width adalah lebar dan height adalah tingginya.
+         pada tombol ini menggunakan warna teal, warna yang telah dideklarasikan di color values
+         Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+     -->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="82dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textB5"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+         android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+         XML file atau secara terprogram pada .java file.
+         pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+         berkali kali sehingga perlu inisialisasi dengan id button7
+         Atribut android:id adalah identitas unik untuk tombol tersebut.
+         Atribut android:layout_width dan layout_height
+         atribut layout_margintop untuk mengatur tepi atas.
+         Yang mana width adalah lebar dan height adalah tingginya.
+         pada tombol ini menggunakan warna teal, warna yang telah dideklarasikan di color values
+         Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+     -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="85dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textB6"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+     android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+     XML file atau secara terprogram pada .java file.
+     pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+     berkali kali sehingga perlu inisialisasi dengan id button8
+     Atribut android:id adalah identitas unik untuk tombol tersebut.
+     Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 407 dan 80
+     atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 36.
+     Yang mana width adalah lebar dan height adalah tingginya.
+     pada tombol ini menggunakan warna teal, warna yang telah dideklarasikan di color values
+     Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+ -->
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="417dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/txdvlp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+
+    <!-- Tombol dengan teks ini diwakili oleh Class Android yaitu :
+      android.widget.Button. Sebuah tombol dapat dimasukkan ke dalam GUI melalui .
+      XML file atau secara terprogram pada .java file.
+      pada button ini terdapat id yang gunanya untuk menandai atribut tersebut, karena atribut button dapat digunakan
+      berkali kali sehingga perlu inisialisasi dengan id button9
+      Atribut android:id adalah identitas unik untuk tombol tersebut.
+      Atribut android:layout_width dan layout_height adalah ukuran pada tombol tersebut yaitu 419 dan 52
+      atribut layout_margintop untuk mengatur tepi atas yaitu sebanyak 30.
+      pada tombol ini menggunakan warna ungu, warna yan telah dideklarasikan di color values
+      Yang mana width adalah lebar dan height adalah tingginya.
+      pada kode_
+      Atribut android:text adalah teks yang akan di tampilkan di dalam komponen tombol tersebut.
+  -->
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="419dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/ungu"
+        android:text="@string/btninst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
